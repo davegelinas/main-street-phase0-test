@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" data-theme="{{site.theme}}" data-closed-on="{{closedOn}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="only light">
+  <title>Privacy Policy | {{business.name}}</title>
+  <meta name="description" content="Privacy policy for {{business.name}}.">
+  <!-- feature:liveDomain -->
+  <link rel="canonical" href="https://{{site.domain}}/privacy-policy/">
+  <!-- /feature:liveDomain -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- feature:displayFont -->
+  <link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- /feature:displayFont -->
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">{{monogram}}</span>
+        <span class="brand-name">{{business.name}}</span>
+      </a>
+      <a class="header-call" href="{{phoneHref}}" aria-label="Call {{business.phone}}">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3.5l1.8 4.6-2.3 1.5a12 12 0 0 0 5.9 5.9l1.5-2.3 4.6 1.8V19a2 2 0 0 1-2 2A17 17 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+        <span class="header-call-label">Call</span>
+        <span class="header-call-number">{{business.phone}}</span>
+      </a>
+    </div>
+  </header>
+  <main id="main">
+    <section>
+      <div class="wrap legal">
+        <p class="eyebrow">Legal</p>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: {{year}}</p>
+
+        <h2>What we collect</h2>
+        <p>{{business.name}} collects only what it needs to run this website:</p>
+        <ul>
+          <!-- feature:contactForm -->
+          <li><strong>Contact form messages.</strong> If you write to us, we receive your name, email address, and message so we can reply. We keep messages as long as the conversation needs, then delete them.</li>
+          <!-- /feature:contactForm -->
+          <!-- feature:analytics -->
+          <li><strong>Anonymous analytics.</strong> We use Cloudflare Web Analytics, which is cookieless and does not track you across sites. It tells us which pages are popular, nothing about who visited.</li>
+          <!-- /feature:analytics -->
+          <li><strong>Basic technical logs.</strong> Our web host, Cloudflare, briefly keeps standard technical records (such as IP addresses) to run and protect the site.</li>
+        </ul>
+
+        <h2>What we never do</h2>
+        <p>We do not sell, rent, or share your personal information with anyone. We do not run advertising trackers. We do not add contact form senders to a marketing list.</p>
+
+        <h2>Cookies</h2>
+        <p>This site sets no cookies of its own. If embedded content (such as a map link you click) sets cookies, that is governed by that provider's policy.</p>
+
+        <h2>Your rights</h2>
+        <p>Write to <a href="mailto:{{business.email}}">{{business.email}}</a> any time to ask what we hold about you, or to ask us to delete it. We will do it promptly.</p>
+
+        <h2>Changes</h2>
+        <p>If this policy changes in a meaningful way, we will note the new date above. Small clarifications may be made without fanfare.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-base">
+        <span>© {{year}} {{business.name}}. All rights reserved.</span>
+        <span><a href="/">Home</a> · <a href="/terms-of-service/">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
